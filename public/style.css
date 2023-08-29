@@ -12,6 +12,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: sans-serif;
+  background-color: #000;
 }
 
 #loading-screen,
@@ -28,9 +29,19 @@ body {
 .fixed-fullscreen {
   position: fixed;
   top: 0;
+  left: 25%;
+  width: 55vw;
+  height: 100vh;
+}
+
+@media (max-width: 768px){
+.fixed-fullscreen {
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+}
 }
 
 /* Carousel */
@@ -224,3 +235,95 @@ body {
     background-color: #eaeaea;
   }
 }
+
+
+
+ :root{
+      --primary-color: #DE39A4;
+    }
+    /* Reset some default styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Main container styles */
+    #main-container {
+      width: 100dvw;
+      height: 100dvh;
+      position: relative;
+    }
+
+    /* Canvas styles */
+    #catrice-canvas {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    /* Navigation styles */
+    nav {
+      position: absolute;
+      bottom: 2em;
+      left: 2em;
+      right: 2em;
+      z-index: 2;
+      display: flex;
+      gap: 1em;
+      align-items: center;
+      justify-content: center;
+    }
+    @media (max-width: 640px){
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+        bottom: 1em;
+        left: 1em;
+        right: 1em;
+        gap: .5em;
+      }
+      nav .text-button{
+        margin-left: 0 !important;
+      }
+    }
+
+    /* Button styles */
+    nav .round-button {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #FFFFFF;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 250ms ease-in-out;
+    }
+
+    nav .round-button img {
+      max-width: 70%;
+      max-height: 70%;
+    }
+
+    /* Text button styles */
+    .text-button {
+      color: #FFFFFF;
+      padding: 16px 16px;
+      border-radius: 100px;
+      margin-left: auto;
+      background: var(--primary-color);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+    .round-button.pending {
+      box-shadow: 0 0 0 1px var(--primary-color);
+    }
+    .round-button.active {
+      box-shadow: 0 0 0 3px var(--primary-color);
+    }
+
