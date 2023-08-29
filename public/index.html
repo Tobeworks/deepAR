@@ -7,6 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
   <title>DeepAR Web SDK - Face and body AR in the browser</title>
   <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript">
+      (function (a, b, c, d) {
+        a = '//tags.tiqcdn.com/utag/cosnova/catrice.eu/dev/utag.js';
+        b = document; c = 'script'; d = b.createElement(c); d.src = a; d.type = 'text/java' + c; d.async = true;
+        a = b.getElementsByTagName(c)[0]; a.parentNode.insertBefore(d, a);
+      })();
+    </script>
 </head>
 
 <body>
@@ -27,9 +34,9 @@
             border-radius: 100px;
             overflow: hidden;
           ">
-        <div id="loading-progress-bar"></div>
+        <div id="loading-progress-bar" style="max-width: 140px;"></div>
       </div>
-      <img id="initial-loading-text" style="max-width: 140px; margin-top: 30px" src="./images/powered-by.svg" /> 
+      <img id="initial-loading-text" style="width: 140px; margin-top: 30px" src="./images/powered-by.svg" /> 
     </div>
   </div>
 
@@ -48,6 +55,8 @@
   <!-- AR screen -->
   <div class="fixed-fullscreen screen" id="ar-screen" style="display: none">
     <!-- <canvas class="deepar" id="deepar-canvas"></canvas> -->
+    
+    <div class="text-button">Become Meta &rarr;</div>
 
     <div class="carousel" id="carousel">
       <div class="carousel-center" id="carousel-center">
@@ -79,7 +88,7 @@
         </div>
       </div>
     </div>
-  <div class="text-button">Become Meta &rarr;</div>
+ 
   </div>
 
 
