@@ -1,3 +1,7 @@
+ :root{
+      --primary-color: #DE39A4;
+    }
+
 canvas.deepar {
   border: 0px none;
   background-color: black;
@@ -56,6 +60,7 @@ body {
   justify-content: center;
   height: 120px;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .carousel.active {
@@ -112,7 +117,7 @@ body {
 
 .slide {
   overflow: hidden;
-  border: 2px solid white;
+  border: 2px solid var(--primary-color);
   -webkit-touch-callout: none; /* Safari Touch */
   -webkit-user-select: none; /* Webkit */
   -moz-user-select: none; /* Firefox */
@@ -146,10 +151,10 @@ body {
   width: 64px;
   height: 64px;
   margin: 8px;
-  border: 8px solid #fff;
+  border: 8px solid var(--primary-color);
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #fff transparent transparent transparent;
+  border-color: var(--primary-color) transparent transparent transparent;
 }
 .lds-ring div:nth-child(1) {
   animation-delay: -0.45s;
@@ -239,9 +244,7 @@ body {
 
 
 
- :root{
-      --primary-color: #DE39A4;
-    }
+
     /* Reset some default styles */
     body, html {
       margin: 0;
@@ -316,6 +319,7 @@ body {
       color: #FFFFFF;
       padding: 16px 16px;
       border-radius: 100px;
+      border: 0;
       margin-left: auto;
       background: var(--primary-color);
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);

@@ -36,7 +36,7 @@
           ">
         <div id="loading-progress-bar" style="max-width: 140px;"></div>
       </div>
-      <img id="initial-loading-text" style="width: 140px; margin-top: 30px" src="./images/powered-by.svg" /> 
+      <img id="initial-loading-text" style="width: 140px; margin-top: 30px; visibility: hidden;" src="./images/default.png" /> 
     </div>
   </div>
 
@@ -45,9 +45,9 @@
     <div class="permission-denied-text-container">
       <div class="permission-denied-text" id="camera_denied">
         <p>Please reload and allow camera access to use this app.</p>
-        <a class="permission-denied-button" href="https://www.deepar.ai/projects" target="__blank">
+        <!-- <a class="permission-denied-button" href="https://www.deepar.ai/projects" target="__blank">
           Discover more
-        </a>
+        </a> -->
       </div>
     </div>
   </div>
@@ -56,7 +56,7 @@
   <div class="fixed-fullscreen screen" id="ar-screen" style="display: none">
     <!-- <canvas class="deepar" id="deepar-canvas"></canvas> -->
     
-    <div class="text-button">Become Meta &rarr;</div>
+    <button class="text-button">Become Meta &rarr;</button>
 
     <div class="carousel" id="carousel">
       <div class="carousel-center" id="carousel-center">
