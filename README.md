@@ -4,6 +4,12 @@
 [https://catrice-nr2qe7lb3q-ez.a.run.app/](https://catrice-nr2qe7lb3q-ez.a.run.app/)
 
 
+### Install
+```
+npm install
+```
+
+
 ### Run the server
 ```
 npm run serve
