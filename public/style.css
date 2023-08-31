@@ -339,7 +339,7 @@ body {
     }
 
 
-    .text-button2 {
+  .text-button2 {
     display: inline-block;
     border-radius: 0 15px 0 15px;
     background: linear-gradient(to right, #693ABD, #FF6049);
@@ -365,3 +365,27 @@ body {
     color: #f2f2f2;
 }
 
+
+
+.logo-left{
+  position: absolute;
+  left: 20px;
+  z-index: 99;
+}
+
+@media (max-width: 640px){
+
+    .text-button2 {
+        font-size: 12px;
+        padding: 6px 12px;
+        width: 140px;
+        top: 10px;
+        right: 10px;
+        margin-top: 15px;
+    }
+
+  .logo-left{
+    margin-top: 10px;
+    width: 150px;
+}
+}
