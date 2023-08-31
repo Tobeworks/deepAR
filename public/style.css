@@ -371,6 +371,7 @@ body {
   position: absolute;
   left: 20px;
   z-index: 99;
+  margin-top: 3px;
 }
 
 @media (max-width: 640px){
@@ -385,7 +386,7 @@ body {
     }
 
   .logo-left{
-    margin-top: 10px;
+    margin-top: 12px;
     width: 150px;
 }
 }
