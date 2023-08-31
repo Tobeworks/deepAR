@@ -3,15 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = (env, argv) => {
-  const isProduction = argv.mode === 'production';
- 
+
   return { entry: "./src/index.js",
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
       inject: true,
       templateParameters: {
-        utag_env: isProduction ? 'prod' : 'dev',
+        utag_env: process.env.NODE_ENV ? 'prod' : 'dev',
         utag_page: 'catrice.eu',
       },
     }),

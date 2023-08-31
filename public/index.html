@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="de-de">
 
 <head>
   <meta charset="utf-8" />
@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css" />
     <script type="text/javascript">
       (function (a, b, c, d) {
-        a = '//tags.tiqcdn.com/utag/cosnova/<%= htmlWebpackPlugin.options.templateParameters.utag_page %>/<%= htmlWebpackPlugin.options.templateParameters.utag_env %>/utag.js';
+        a = "//tags.tiqcdn.com/utag/cosnova/catrice.eu/prod/utag.js";
         b = document; c = 'script'; d = b.createElement(c); d.src = a; d.type = 'text/java' + c; d.async = true;
         a = b.getElementsByTagName(c)[0]; a.parentNode.insertBefore(d, a);
       })();
@@ -18,7 +18,6 @@
 
 <body>
   <!-- loading screen -->
-  <h1><%= htmlWebpackPlugin.options.templateParameters.myVariable %></h1>
   <div class="fixed-fullscreen" id="loading-screen">
     <div style="
           display: flex;
