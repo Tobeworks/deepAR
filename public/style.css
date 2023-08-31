@@ -338,3 +338,30 @@ body {
       box-shadow: 0 0 0 3px var(--primary-color);
     }
 
+
+    .text-button2 {
+    display: inline-block;
+    border-radius: 0 15px 0 15px;
+    background: linear-gradient(to right, #693ABD, #FF6049);
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 200px;
+    transition: background 0.3s, color 0.3s;
+    cursor: pointer;
+    border:1px solid white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 99;
+}
+
+.text-button2:hover {
+    background: linear-gradient(to right, #57329b, #e54a39);
+    color: #f2f2f2;
+}
+
