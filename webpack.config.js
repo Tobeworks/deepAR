@@ -1,7 +1,21 @@
 const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
-  entry: "./src/index.js",
+
+module.exports = (env, argv) => {
+  const isProduction = argv.mode === 'production';
+ 
+  return { entry: "./src/index.js",
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html',
+      inject: true,
+      templateParameters: {
+        utag_env: isProduction ? 'prod' : 'dev',
+        utag_page: 'catrice.eu',
+      },
+    }),
+  ],
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
@@ -46,5 +60,6 @@ module.exports = {
     ],
     compress: true,
     port: 9000,
-  },
+  }
+  }
 };

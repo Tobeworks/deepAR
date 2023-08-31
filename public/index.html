@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css" />
     <script type="text/javascript">
       (function (a, b, c, d) {
-        a = '//tags.tiqcdn.com/utag/cosnova/catrice.eu/dev/utag.js';
+        a = '//tags.tiqcdn.com/utag/cosnova/<%= htmlWebpackPlugin.options.templateParameters.utag_page %>/<%= htmlWebpackPlugin.options.templateParameters.utag_env %>/utag.js';
         b = document; c = 'script'; d = b.createElement(c); d.src = a; d.type = 'text/java' + c; d.async = true;
         a = b.getElementsByTagName(c)[0]; a.parentNode.insertBefore(d, a);
       })();
@@ -18,6 +18,7 @@
 
 <body>
   <!-- loading screen -->
+  <h1><%= htmlWebpackPlugin.options.templateParameters.myVariable %></h1>
   <div class="fixed-fullscreen" id="loading-screen">
     <div style="
           display: flex;
@@ -56,7 +57,7 @@
   <div class="fixed-fullscreen screen" id="ar-screen" style="display: none">
     <!-- <canvas class="deepar" id="deepar-canvas"></canvas> -->
     
-    <button class="text-button">Become Meta &rarr;</button>
+    <a href="https://www.catrice.eu/de-de/limited-editions/metaface" target="_blank" class="text-button">Become Meta &rarr;</a>
 
     <div class="carousel" id="carousel">
       <div class="carousel-center" id="carousel-center">
@@ -69,22 +70,22 @@
       </div>
       <div class="carousel-slider">
         <div class="slide">
-          <img class="responsive-img" src="images/default.png" />
+          <img class="responsive-img" src="images/thumbnails/Metaface_Eyeshadow.jpg" />
         </div>
         <div class="slide">
-          <img class="responsive-img" src="images/default.png" />
+          <img class="responsive-img" src="images/thumbnails/Metaface_Highligter.jpg" />
         </div>
         <div class="slide">
-          <img class="responsive-img" src="images/default.png" />
+          <img class="responsive-img" src="images/thumbnails/Metaface_Lipglace.jpg" />
         </div>
         <div class="slide">
-          <img class="responsive-img" src="images/default.png" />
+          <img class="responsive-img" src="images/thumbnails/Metaface_Nailpolish.jpg" />
         </div>
         <div class="slide">
-          <img class="responsive-img" src="images/default.png" />
+          <img class="responsive-img" src="images/thumbnails/Metaface_Primer.jpg" />
         </div>
         <div class="slide">
-          <img class="responsive-img" src="images/default.png" />
+          <img class="responsive-img" src="images/thumbnails/Metaface_Primer.jpg" />
         </div>
       </div>
     </div>
