@@ -17,12 +17,11 @@ import Carousel from "./carousel.js";
   // All the effects are in the public/effects folder.
   // Here we define the order of effect files.
   const effectList = [
-    "effects/catrice",
-    "effects/mask-1.deepar",
-    "effects/mask-2.deepar",
-    "effects/mask-3.deepar",
-    "effects/mask-4.deepar",
-    "effects/mask-5.deepar",
+    "effects/Catrice_Mask-1.deepar",
+    "effects/Catrice_Mask-2.deepar",
+    "effects/Catrice_Mask-3.deepar",
+    "effects/Catrice_Mask-4.deepar",
+    "effects/Catrice_Mask-5.deepar",
   ];
 
   let deepAR = null;
