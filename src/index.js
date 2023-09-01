@@ -29,7 +29,7 @@ import Carousel from "./carousel.js";
   // Initialize DeepAR with an effect file.
   try {
     deepAR = await deepar.initialize({
-      licenseKey: "f9e5a694f351f2f44314e4e5943c797e44c2cce1f8894cddee6709921374731a78ff5c448ff670c0",
+      licenseKey: "68d8e3d96d52a1762ebeb697e661cbe658bef5fd3e02f61503cf1323f262ad73eff23f7ff5b2ff72",
       previewElement,
       effect: effectList[0],
       // Removing the rootPath option will make DeepAR load the resources from the JSdelivr CDN,
