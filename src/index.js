@@ -69,16 +69,14 @@ import Carousel from "./carousel.js";
   };
 
   utag.track('view', {
-    site_brand: 'catrice/essence',
+    site_brand: 'catrice',
     site_country: 'DE',
     site_language: 'de',
     currency_code: 'EUR',
     logged_in_status: false,
     page_name: 'metaface.catrice.eu',
-    page_template: 'templateName',
-    module_name: 'moduleName',
     data_source: 'FEdataLayer',
-    tealium_scope: 'explicited'
+    tealium_scope: 'explicited',
   })
 
   //console.log(utag);
