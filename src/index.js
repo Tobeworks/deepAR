@@ -78,8 +78,9 @@ import Carousel from "./carousel.js";
     page_template: 'templateName',
     module_name: 'moduleName',
     data_source: 'FEdataLayer',
-    tealium_scope: 'medium_1'
+    tealium_scope: 'explicited'
   })
 
-console.log(utag)
+  //console.log(utag);
+
 })();
