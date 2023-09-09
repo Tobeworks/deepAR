@@ -36,7 +36,7 @@ body {
   top: 0;
   left: 0;
   width: 99vw;
-  height: 100vh;
+  height:90vh;
 }
 
 @media (max-width: 768px){
@@ -296,6 +296,7 @@ body {
       .text-button{
         margin-left: 0 !important;
       }
+
     }
 
     /* Button styles */
@@ -391,4 +392,12 @@ body {
     margin-top: 12px;
     width: 150px;
 }
+      .carousel{
+          //margin-bottom: 150px;
+      }
+}
+
+
+.ios-safari .carousel{
+  margin-bottom: 85px !important;
 }
