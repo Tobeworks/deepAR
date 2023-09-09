@@ -79,6 +79,11 @@ import Carousel from "./carousel.js";
     tealium_scope: 'explicited',
   })
 
+  const isSafariMobile = /^((?!chrome|android).)*safari/i.test(navigator.userAgent) && /iPhone|iPod|iPad/i.test(navigator.userAgent);
+  if (isSafariMobile) {
+    const carouselElements = document.getElementById('carousel');
+    carouselElements.style.marginBottom = '80px';
+  }
   //console.log(utag);
 
 })();
