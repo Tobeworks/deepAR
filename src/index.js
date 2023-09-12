@@ -18,11 +18,10 @@ import Carousel from "./carousel.js";
   // Here we define the order of effect files.
   const effectList = [
     "effects/catrice",
-    "effects/Catrice_Mask-1.deepar",
-    "effects/Catrice_Mask-2.deepar",
-    "effects/Catrice_Mask-3.deepar",
-    "effects/Catrice_Mask-4.deepar",
-    "effects/Catrice_Mask-5.deepar",
+    "effects/catrice-mask1.deepar",
+    "effects/catrice-mask2.deepar",
+    "effects/catrice-mask3.deepar",
+    "effects/catrice-mask4.deepar",
   ];
 
   let deepAR = null;
@@ -78,14 +77,7 @@ import Carousel from "./carousel.js";
     data_source: 'FEdataLayer',
     tealium_scope: 'explicited',
   })
+
+
 })();
 
-// const isSafariMobile = /^((?!chrome|android).)*safari/i.test(navigator.userAgent) && /iPhone|iPod|iPad/i.test(navigator.userAgent);
-// if (isSafariMobile) {
-//   console.log('isSafariMobile')
-//   const carouselElements = document.getElementById('carousel');
-//   carouselElements.style.marginBottom = '80px';
-// }
-if (/iP(ad|hone|od).+Version\/[\d.]+.*Safari/.test(navigator.userAgent)) {
-  document.body.classList.add('ios-safari');
-}
