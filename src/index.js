@@ -78,6 +78,7 @@ import Carousel from "./carousel.js";
     tealium_scope: 'explicited',
   })
 
-
+  if (/iP(ad|hone|od).+Version\/[\d.]+.*Safari/.test(navigator.userAgent)) {
+    document.body.classList.add('ios-safari');
+  }
 })();
-

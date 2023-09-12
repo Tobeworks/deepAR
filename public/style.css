@@ -35,8 +35,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 99vw;
-  height:90vh;
+  width: 100vw;
+  height:100vh;
 }
 
 @media (max-width: 768px){
@@ -391,13 +391,8 @@ body {
   .logo-left{
     margin-top: 12px;
     width: 150px;
+  }
 }
-      .carousel{
-          //margin-bottom: 150px;
-      }
-}
-
-
 .ios-safari .carousel{
   margin-bottom: 85px !important;
 }
