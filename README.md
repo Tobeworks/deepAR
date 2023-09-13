@@ -1,8 +1,10 @@
 # catrice AR
 
-## View the demo
+## Service URL
 [https://catrice-nr2qe7lb3q-ez.a.run.app/](https://catrice-nr2qe7lb3q-ez.a.run.app/)
 
+## Main URL
+[https://metaface.catrice.eu/](https://metaface.catrice.eu/)
 
 ### Install
 ```
