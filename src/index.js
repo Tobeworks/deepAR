@@ -81,4 +81,8 @@ import Carousel from "./carousel.js";
   if (/iP(ad|hone|od).+Version\/[\d.]+.*Safari/.test(navigator.userAgent)) {
     document.body.classList.add('ios-safari');
   }
+  
+  if (/iP(ad|hone|od).*CriOS/.test(navigator.userAgent)) {
+    document.body.classList.add('ios-chrome');
+  }
 })();
