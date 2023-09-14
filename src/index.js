@@ -116,7 +116,7 @@ import Carousel from "./carousel.js";
     document.body.classList.add('ios-chrome');
   }
 
-
+  // console.log(ConsentStore)
   // const addEventListeners = () => {
   //   if (!window.__cmp) return false;
 
@@ -127,5 +127,5 @@ import Carousel from "./carousel.js";
   //   const consentrejectedSet =
   //     consentrejected || window.__cmp('addEventListener', ['consentrejected', onConsentChange, false], null);
   // }
-  // addEventListener()
+  // addEventListeners();
 })();

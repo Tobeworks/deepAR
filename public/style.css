@@ -97,6 +97,7 @@ body {
   z-index: 100;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   -webkit-user-select: none;
+  user-select: none;
 }
 
 .carousel-slider .slide {
@@ -420,6 +421,9 @@ nav .round-button img {
 .link:hover {
   text-decoration: underline;
 }
+  .copyright{
+    margin-right: 25px
+  }
 @media (max-width: 767px) {
   .footer {
     font-size: .8em;
@@ -441,6 +445,7 @@ nav .round-button img {
   }
   .copyright{
     font-size: .6em;
+    margin: 0;
   }
   .nomobile{
     display: none;
