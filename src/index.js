@@ -67,6 +67,36 @@ import Carousel from "./carousel.js";
     loadingSpinner.style.display = "none";
   };
 
+
+  const UTAG_DATA_OBJECT_META_ID = 'utag-data-object';
+  const UTAG_DATA_OBJECT = '_utagDataObject';
+
+
+  const addUtagDataObjectMetaTag = () => {
+
+    const utag_data = {
+      tealium_scope: 'medium_1',
+      site_country: 'DE',
+      site_language: 'de',
+
+    };
+
+    const current = document.getElementById(UTAG_DATA_OBJECT_META_ID);
+    const meta = document.createElement('meta');
+
+    meta.name = UTAG_DATA_OBJECT;
+    meta.content = JSON.stringify(utag_data);
+
+    if (!current) {
+      meta.id = UTAG_DATA_OBJECT_META_ID;
+      document.head.appendChild(meta);
+    }
+  
+  }
+  
+  addUtagDataObjectMetaTag();
+
+
   utag.track('view', {
     site_brand: 'catrice',
     site_country: 'DE',
@@ -85,4 +115,17 @@ import Carousel from "./carousel.js";
   if (/iP(ad|hone|od).*CriOS/.test(navigator.userAgent)) {
     document.body.classList.add('ios-chrome');
   }
+
+
+  // const addEventListeners = () => {
+  //   if (!window.__cmp) return false;
+
+  //   const { consentapproved, consentrejected, consentcustom } = ConsentStore.get().handlersSet;
+
+  //   const consentapprovedSet =
+  //     consentapproved || window.__cmp('addEventListener', ['consentapproved', onConsentChange, false], null);
+  //   const consentrejectedSet =
+  //     consentrejected || window.__cmp('addEventListener', ['consentrejected', onConsentChange, false], null);
+  // }
+  // addEventListener()
 })();
