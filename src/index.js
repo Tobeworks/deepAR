@@ -17,7 +17,6 @@ import Carousel from "./carousel.js";
   // All the effects are in the public/effects folder.
   // Here we define the order of effect files.
   const effectList = [
-    "effects/catrice",
     "effects/catrice-mask1.deepar",
     "effects/catrice-mask2.deepar",
     "effects/catrice-mask3.deepar",
@@ -94,7 +93,7 @@ import Carousel from "./carousel.js";
   
   }
   
-  addUtagDataObjectMetaTag();
+  //addUtagDataObjectMetaTag();
 
 
   utag.track('view', {
