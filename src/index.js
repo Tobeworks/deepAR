@@ -93,7 +93,7 @@ import Carousel from "./carousel.js";
   
   }
   
-  //addUtagDataObjectMetaTag();
+  addUtagDataObjectMetaTag();
 
 
   utag.track('view', {
