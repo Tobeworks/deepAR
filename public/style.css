@@ -36,17 +36,18 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  //height: 100vh;
+  height: calc(var(--vh, 1vh) * 100); 
 }
 
 @media (max-width: 768px) {
-  .fixed-fullscreen {
+  /* .fixed-fullscreen {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-  }
+  } */
 }
 
 /* Carousel */

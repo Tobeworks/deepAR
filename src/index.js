@@ -90,9 +90,9 @@ import Carousel from "./carousel.js";
       meta.id = UTAG_DATA_OBJECT_META_ID;
       document.head.appendChild(meta);
     }
-  
+
   }
-  
+
   addUtagDataObjectMetaTag();
 
 
@@ -107,13 +107,21 @@ import Carousel from "./carousel.js";
     tealium_scope: 'explicited',
   })
 
-  if (/iP(ad|hone|od).+Version\/[\d.]+.*Safari/.test(navigator.userAgent)) {
-    document.body.classList.add('ios-safari');
+  // if (/iP(ad|hone|od).+Version\/[\d.]+.*Safari/.test(navigator.userAgent)) {
+  //   document.body.classList.add('ios-safari');
+  // }
+
+  // if (/iP(ad|hone|od).*CriOS/.test(navigator.userAgent)) {
+  //   document.body.classList.add('ios-chrome');
+  // }
+
+
+  function setVH() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
   }
-  
-  if (/iP(ad|hone|od).*CriOS/.test(navigator.userAgent)) {
-    document.body.classList.add('ios-chrome');
-  }
+  window.addEventListener('resize', setVH);
+  setVH();
 
   // console.log(ConsentStore)
   // const addEventListeners = () => {
