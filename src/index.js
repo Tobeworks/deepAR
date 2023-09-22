@@ -20,7 +20,7 @@ import Carousel from "./carousel.js";
     "effects/catrice-mask1.deepar",
     "effects/catrice-mask2.deepar",
     "effects/catrice-mask3.deepar",
-    "effects/catrice-mask4.deepar",
+    // "effects/catrice-mask4.deepar",
   ];
 
   let deepAR = null;
