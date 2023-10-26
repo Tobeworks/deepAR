@@ -10,8 +10,6 @@ module.exports = (env, argv) => {
       template: './public/index.html',
       inject: true,
       templateParameters: {
-        utag_env: process.env.NODE_ENV ? 'prod' : 'dev',
-        utag_page: 'catrice.eu',
       },
     }),
   ],
