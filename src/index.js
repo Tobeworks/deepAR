@@ -17,9 +17,9 @@ import Carousel from "./carousel.js";
   // All the effects are in the public/effects folder.
   // Here we define the order of effect files.
   const effectList = [
-    "effects/catrice-mask1.deepar",
     "effects/catrice-mask2.deepar",
     "effects/catrice-mask3.deepar",
+    "effects/catrice-mask4.deepar",
     // "effects/catrice-mask4.deepar",
   ];
 
@@ -67,45 +67,45 @@ import Carousel from "./carousel.js";
   };
 
 
-  const UTAG_DATA_OBJECT_META_ID = 'utag-data-object';
-  const UTAG_DATA_OBJECT = '_utagDataObject';
+  // const UTAG_DATA_OBJECT_META_ID = 'utag-data-object';
+  // const UTAG_DATA_OBJECT = '_utagDataObject';
 
 
-  const addUtagDataObjectMetaTag = () => {
+  // const addUtagDataObjectMetaTag = () => {
 
-    const utag_data = {
-      tealium_scope: 'medium_1',
-      site_country: 'DE',
-      site_language: 'de',
+  //   const utag_data = {
+  //     tealium_scope: 'medium_1',
+  //     site_country: 'DE',
+  //     site_language: 'de',
 
-    };
+  //   };
 
-    const current = document.getElementById(UTAG_DATA_OBJECT_META_ID);
-    const meta = document.createElement('meta');
+  //   const current = document.getElementById(UTAG_DATA_OBJECT_META_ID);
+  //   const meta = document.createElement('meta');
 
-    meta.name = UTAG_DATA_OBJECT;
-    meta.content = JSON.stringify(utag_data);
+  //   meta.name = UTAG_DATA_OBJECT;
+  //   meta.content = JSON.stringify(utag_data);
 
-    if (!current) {
-      meta.id = UTAG_DATA_OBJECT_META_ID;
-      document.head.appendChild(meta);
-    }
+  //   if (!current) {
+  //     meta.id = UTAG_DATA_OBJECT_META_ID;
+  //     document.head.appendChild(meta);
+  //   }
 
-  }
+  //}
 
-  addUtagDataObjectMetaTag();
+  // addUtagDataObjectMetaTag();
 
 
-  utag.track('view', {
-    site_brand: 'catrice',
-    site_country: 'DE',
-    site_language: 'de',
-    currency_code: 'EUR',
-    logged_in_status: false,
-    page_name: 'metaface.catrice.eu',
-    data_source: 'FEdataLayer',
-    tealium_scope: 'explicited',
-  })
+  // utag.track('view', {
+  //   site_brand: 'catrice',
+  //   site_country: 'DE',
+  //   site_language: 'de',
+  //   currency_code: 'EUR',
+  //   logged_in_status: false,
+  //   page_name: 'metaface.catrice.eu',
+  //   data_source: 'FEdataLayer',
+  //   tealium_scope: 'explicited',
+  // })
 
   // if (/iP(ad|hone|od).+Version\/[\d.]+.*Safari/.test(navigator.userAgent)) {
   //   document.body.classList.add('ios-safari');
